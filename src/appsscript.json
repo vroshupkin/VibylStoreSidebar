@@ -1,0 +1,48 @@
+{
+  "timeZone": "Europe/Moscow",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [{
+      "menuName": "Цена как у конкурентов",
+      "functionName": "myFunction3",
+      "defaultShortcut": "Ctrl+Alt+Shift+1"
+    }, {
+      "menuName": "generateSKU",
+      "functionName": "generateSKU"
+    }, {
+      "menuName": "comparePrices",
+      "functionName": "comparePrices"
+    }, {
+      "menuName": "applyFormulaToColumn",
+      "functionName": "applyFormulaToColumn"
+    }, {
+      "menuName": "runScript",
+      "functionName": "runScript"
+    }, {
+      "menuName": "PriceMagic",
+      "functionName": "PriceMagic"
+    }, {
+      "menuName": "PriceMagicAvito",
+      "functionName": "PriceMagicAvito"
+    }, {
+      "menuName": "PriceMagicOzon",
+      "functionName": "PriceMagicOzon"
+    }, {
+      "menuName": "onEdit",
+      "functionName": "onEdit"
+    }, {
+      "menuName": "extractVinylColor",
+      "functionName": "extractVinylColor"
+    }, {
+      "menuName": "AddRowsAndExtendFormulas",
+      "functionName": "AddRowsAndExtendFormulas"
+    }]
+  },
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "ANYONE_ANONYMOUS"
+  }
+}

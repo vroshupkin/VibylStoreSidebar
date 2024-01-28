@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "lib": ["es6"],
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "build",
+    "downlevelIteration": true,
+    "experimentalDecorators": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
+

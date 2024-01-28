@@ -1,0 +1,8 @@
+\9570c6265ad8989f34bacefd55217337425cdab2 *C:\\Projects\\VibylStoreSidebar\\scripts\\build_scripts.ts
+\94ac44ba891cea95e8c1b1779a01b039d89fcd60 *C:\\Projects\\VibylStoreSidebar\\scripts\\common.ts
+\da39a3ee5e6b4b0d3255bfef95601890afd80709 *C:\\Projects\\VibylStoreSidebar\\scripts\\content_service.ts
+\950f8f8a514f1066779c06675dfc9fb2c807e1b6 *C:\\Projects\\VibylStoreSidebar\\scripts\\deploy.ts
+\0e945890d79e453536073589044d7e998cada098 *C:\\Projects\\VibylStoreSidebar\\scripts\\generate_clasp_json.ts
+\09fc7890339b56ef32f4e3b7c43f209d2a3e6038 *C:\\Projects\\VibylStoreSidebar\\scripts\\init_clasp_project.ts
+\159f525ca879d5b0d67fa373b23f48f047bb7a5c *C:\\Projects\\VibylStoreSidebar\\scripts\\pull.ts
+\02bf1682e381e1cf3feb117878f380b03ce69ec9 *C:\\Projects\\VibylStoreSidebar\\scripts\\read_env.ts

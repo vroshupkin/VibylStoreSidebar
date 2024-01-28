@@ -1,0 +1,3 @@
+test/
+**/*.spec.*
+./src/api/Api.ts

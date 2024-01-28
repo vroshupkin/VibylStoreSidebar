@@ -1,0 +1,50 @@
+<div>
+    <span>Найти артикуль </span>
+    <input type="text" />
+    <button onclick="find_on_click()">Найти</button>
+    
+    <div id="hello_find">
+        123
+    </div>
+
+
+
+    <div>
+      <span>Исполнитель</span>
+      <div id='artist'></div>
+    </div>
+
+
+    <script>
+        document.getElementById('hello_find').innerHTML = new Date();
+        
+        function find_on_click(e)
+        {
+          try
+          {    
+            document.getElementById('hello_find').innerHTML = 'Run';
+            const div = document.getElementById('hello_find');
+
+            const artist_div = document.getElementById('artist');
+
+            let data = '';
+
+            google.script.run.withSuccessHandler(
+              (obj) => {
+                document.getElementById('artist').innerHTML = obj.artist;
+              }
+              ).readArticle();
+
+              
+              
+            
+          }
+          catch(e)
+          {
+            document.getElementById('hello_find').innerHTML = e.message + '\n';
+          }
+        
+
+        }
+    </script>
+</div>
