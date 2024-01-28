@@ -10,7 +10,7 @@ function main()
     'npx clasp pull',
     'mv -v ./src/*.js ./build/',
     'mv -v ./src/**/*.js ./build/ || echo',
-    'cp -rv ./src/**/*.html ./build'
+    'cp -rv ./src/**/*.html ./build || echo'
   ].forEach(cmd => 
   {
     try

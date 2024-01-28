@@ -1,0 +1,5 @@
+function onOpen()
+{
+  Menus.SideBars();
+  
+}

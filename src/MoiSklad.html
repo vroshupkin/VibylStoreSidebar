@@ -1,0 +1,62 @@
+<div>
+    <div id="article__input">
+      <span>Найти артикуль </span>
+      <input type="text"/>
+    </div>
+    
+    <button onclick="find_on_click()">Найти</button>
+    
+    <div id="article">ERROR LOGGER</div>
+
+    <image id="album__image"
+      style="width: 100px; height: 100px;"
+      src=""
+    />
+    
+
+    <div id='artist__container'>
+      <span>Исполнитель</span>
+      <div id='artist__value'></div>
+    </div>
+
+    <style>
+        #artist__container {
+          display: flex;
+          width: 250px;
+          justify-content: space-between;
+        }
+
+        #artist__value {
+          border: solid 1px gray;
+        }
+        
+    </style>
+    
+    <script>
+        document.getElementById('hello_find').innerHTML = new Date();
+        
+        function find_on_click(e)
+        {
+          try
+          {    
+            const input_val = document.querySelector('#article__input > input').value;
+            
+            google.script.run.withSuccessHandler(
+              (obj) => 
+              {
+                document.getElementById('artist__value').innerHTML = obj.artist;
+                document.getElementById('album__image').src = obj.image_url;
+              }
+            ).Model__ReadArticle(Number(input_val));
+              
+            
+          }
+          catch(e)
+          {
+            document.querySelector('#article').innerHTML = e.message + '\n';
+          }
+        
+
+        }
+    </script>
+</div>
